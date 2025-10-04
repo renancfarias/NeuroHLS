@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/04/25 18:18:16",
+ "timestampMillis": "1759612696494",
+ "buildStep": {
+  "cmdId": "38ac2bb8-514e-477b-be8b-3dcfffa0e560",
+  "name": "v++",
+  "logFile": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\logs\\snn_n-mnist_resource_opt.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\hls_config.cfg --work_dir snn_n-mnist_resource_opt ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\hls_config.cfg",
+   "--work_dir",
+   "snn_n-mnist_resource_opt"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\hls_config.cfg",
+    "content": "part=xcku035-fbva676-3-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=400MHz\nsyn.file=C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\layer.h\nsyn.file=C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn.cpp\ntb.file=C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_tb.cpp\ntb.file=C:\\Users\\renan\\Desktop\\NeuroHLS\\dataset\\n-mnist_testset_data.txt\ntb.file=C:\\Users\\renan\\Desktop\\NeuroHLS\\dataset\\n-mnist_testset_targets.txt\nsyn.top=snn_mnist_hls"
+   }
+  ],
+  "cwd": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:18:16",
+ "timestampMillis": "1759612696496",
+ "status": {
+  "cmdId": "38ac2bb8-514e-477b-be8b-3dcfffa0e560",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/04/25 18:18:46",
+ "timestampMillis": "1759612726295",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "snn_mnist_hls",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\layer.h",
+     "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/04/25 18:18:46",
+ "timestampMillis": "1759612726298",
+ "buildStep": {
+  "cmdId": "ffa244cd-5f9f-4348-8b4c-232dbc690b8d",
+  "name": "",
+  "logFile": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:18:46",
+ "timestampMillis": "1759612726299",
+ "status": {
+  "cmdId": "ffa244cd-5f9f-4348-8b4c-232dbc690b8d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:18:46",
+ "timestampMillis": "1759612726299",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:18:46",
+ "timestampMillis": "1759612726300",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:18:46",
+ "timestampMillis": "1759612726303",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:25:03",
+ "timestampMillis": "1759613103156",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:25:03",
+ "timestampMillis": "1759613103159",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:25:03",
+ "timestampMillis": "1759613103161",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:25:03",
+ "timestampMillis": "1759613103162",
+ "status": {
+  "cmdId": "ffa244cd-5f9f-4348-8b4c-232dbc690b8d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:25:03",
+ "timestampMillis": "1759613103880",
+ "status": {
+  "cmdId": "38ac2bb8-514e-477b-be8b-3dcfffa0e560",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:25:03",
+ "timestampMillis": "1759613103928",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\reports\\v++_compile_snn_n-mnist_resource_opt_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:25:03",
+ "timestampMillis": "1759613103930",
+ "report": {
+  "path": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_n-mnist_resource_opt\\reports\\.db\\v++_compile_snn_n-mnist_resource_opt_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,44 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "1 2",
+    "file": "snn.cpp",
+    "fileloc": 9,
+    "instructions": 183,
+    "name": "snn_mnist_hls",
+    "stores": {
+      "T": 11
+    },
+    "total_instructions": 3377
+  },
+  "1": {
+    "basicblocks": 517,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 37,
+    "instructions": 2954,
+    "loads": {
+      "G": 256
+    },
+    "name": "lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>",
+    "stores": {
+      "G": 256
+    },
+    "total_instructions": 2954
+  },
+  "2": {
+    "basicblocks": 45,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 37,
+    "instructions": 240,
+    "loads": {
+      "G": 20
+    },
+    "name": "lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>",
+    "stores": {
+      "G": 20
+    },
+    "total_instructions": 240
+  }
+}

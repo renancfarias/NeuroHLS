@@ -1,0 +1,186 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:104:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pragma" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=this" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:128:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vector&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:144:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vector&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:169:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator++" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:170:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator--" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator+=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator-=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:200:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator*=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:201:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator/=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:202:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator%=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&amp;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:204:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator|=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator^=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:206:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&lt;&lt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:207:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&gt;&gt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_add" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:223:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_mult" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_and" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:225:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_or" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:226:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_xor" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&lt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:257:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&lt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:258:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator==" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:259:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator!=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:260:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&gt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\hls_vector.h:261:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights dim=1 type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=potentials type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=spikes dim=0 type=complete" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 avg=15 max=n_inputs" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="./layer.h:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lif_layer" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="snn_mnist_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=snn_mnist_hls" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="snn.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="snn_mnist_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out1 depth=num_neurons[0]" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="snn.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="snn_mnist_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out2 depth=num_neurons[1]" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="snn.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="snn_mnist_hls" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="snn.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="snn_mnist_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 avg=1 max=num_neurons[1]" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="snn.cpp:28:5" msg_body="Loop 'write_output' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="write_output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="snn.cpp:23:5" msg_body="Loop 'reset_ouput' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="reset_ouput"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="./layer.h:69:5" msg_body="Loop 'integrate' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="integrate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="./layer.h:73:26" msg_body="Loop 'VITIS_LOOP_73_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_73_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="./layer.h:61:5" msg_body="Loop 'output' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="./layer.h:49:5" msg_body="Loop 'fire_leak' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="fire_leak"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="snn.cpp:9:0" msg_body="Unrolling loop 'reset_ouput' (snn.cpp:23:5) in function 'snn_mnist_hls' completely with a factor of 10">
+        <args Factor="10" LoopLoc="snn.cpp:23:5" LoopName="reset_ouput"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="./layer.h:37:0" msg_body="Unrolling loop 'VITIS_LOOP_73_1' (./layer.h:73:26) in function 'lif_layer&lt;10, 128, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' completely with a factor of 10">
+        <args Factor="10" LoopLoc="./layer.h:73:26" LoopName="VITIS_LOOP_73_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="./layer.h:37:0" msg_body="Unrolling loop 'output' (./layer.h:61:5) in function 'lif_layer&lt;10, 128, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' completely with a factor of 10">
+        <args Factor="10" LoopLoc="./layer.h:61:5" LoopName="output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="./layer.h:37:0" msg_body="Pipeline directive for loop 'output' (./layer.h:61:5) in function 'lif_layer&lt;10, 128, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' has been removed because the loop is unrolled completely">
+        <args LoopLoc="./layer.h:61:5" LoopName="output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="./layer.h:37:0" msg_body="Unrolling loop 'fire_leak' (./layer.h:49:5) in function 'lif_layer&lt;10, 128, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' completely with a factor of 10">
+        <args Factor="10" LoopLoc="./layer.h:49:5" LoopName="fire_leak"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="./layer.h:37:0" msg_body="Unrolling loop 'VITIS_LOOP_73_1' (./layer.h:73:26) in function 'lif_layer&lt;128, 784, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' completely with a factor of 128">
+        <args Factor="128" LoopLoc="./layer.h:73:26" LoopName="VITIS_LOOP_73_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="./layer.h:37:0" msg_body="Unrolling loop 'output' (./layer.h:61:5) in function 'lif_layer&lt;128, 784, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' completely with a factor of 128">
+        <args Factor="128" LoopLoc="./layer.h:61:5" LoopName="output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="./layer.h:37:0" msg_body="Pipeline directive for loop 'output' (./layer.h:61:5) in function 'lif_layer&lt;128, 784, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' has been removed because the loop is unrolled completely">
+        <args LoopLoc="./layer.h:61:5" LoopName="output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="./layer.h:37:0" msg_body="Unrolling loop 'fire_leak' (./layer.h:49:5) in function 'lif_layer&lt;128, 784, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' completely with a factor of 128">
+        <args Factor="128" LoopLoc="./layer.h:49:5" LoopName="fire_leak"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./../weights/n-mnist_weights.h:132:0" msg_body="Applying array_partition to 'weights_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="weights_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./../weights/n-mnist_weights.h:3:0" msg_body="Applying array_partition to 'weights_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="weights_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./layer.h:41:0" msg_body="Applying array_partition to '_ZZ9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EEE10potentials': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EEE10potentials"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./layer.h:41:0" msg_body="Applying array_partition to '_ZZ9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EEE10potentials': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EEE10potentials"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="snn.cpp:28:5" msg_body="Cannot unroll loop 'write_output' (snn.cpp:28:5) in function 'snn_mnist_hls' as it has a variable trip count">
+        <args LoopLoc="snn.cpp:28:5" LoopName="write_output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="./layer.h:69:5" msg_body="Cannot unroll loop 'integrate' (./layer.h:69:5) in function 'lif_layer&lt;10, 128, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' as it has a variable trip count">
+        <args LoopLoc="./layer.h:69:5" LoopName="integrate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="./layer.h:69:5" msg_body="Cannot unroll loop 'integrate' (./layer.h:69:5) in function 'lif_layer&lt;128, 784, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;' as it has a variable trip count">
+        <args LoopLoc="./layer.h:69:5" LoopName="integrate"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

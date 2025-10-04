@@ -1,0 +1,3 @@
+relativeroot=C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_latency_opt
+original_argv=--mode hls --csim --config C:\Users\renan\Desktop\NeuroHLS\snn_n-mnist_latency_opt\hls_config.cfg --work_dir snn_n-mnist_latency_opt 
+

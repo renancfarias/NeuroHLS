@@ -1,0 +1,136 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'snn_mnist_hls'" level="0">
+<item name = "Date">Sat Oct  4 18:24:33 2025
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">snn_n-mnist_resource_opt</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">kintexu</item>
+<item name = "Target device">xcku035-fbva676-3-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">2.50 ns, 1.738 ns, 0.68 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">145, 1998, 0.362 us, 4.995 us, 146, 1999, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_760">lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s, 129, 1702, 0.323 us, 4.255 us, 129, 1702, no</column>
+<column name="grp_lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_1279">lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s, 11, 272, 27.500 ns, 0.680 us, 11, 272, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- write_output">1, 19, 2, -, -, 0 ~ 10, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2, -</column>
+<column name="FIFO">1, -, 256, 118, -</column>
+<column name="Instance">138, -, 15367, 18342, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 152, -</column>
+<column name="Register">-, -, 10, -, -</column>
+<specialColumn name="Available">1080, 1700, 406256, 203128, 0</specialColumn>
+<specialColumn name="Utilization (%)">12, 0, 3, 9, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_1279">lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s, 10, 0, 1144, 1401, 0</column>
+<column name="grp_lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_760">lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s, 128, 0, 14223, 16941, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="out1_fifo_U">1, 157, 0, -, 128, 10, 1280</column>
+<column name="out2_fifo_U">0, 99, 0, -, 10, 10, 100</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="grp_nbreadreq_fu_638_p3">and, 0, 0, 2, 1, 0</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">43, 8, 1, 8</column>
+<column name="out1_read">9, 2, 1, 2</column>
+<column name="out1_write">9, 2, 1, 2</column>
+<column name="out2_write">9, 2, 1, 2</column>
+<column name="output_r_address0_local">37, 7, 4, 28</column>
+<column name="output_r_address1_local">31, 6, 4, 24</column>
+<column name="output_r_d0_local">14, 3, 1, 3</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="grp_lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_1279_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_760_ap_start_reg">1, 0, 1, 0</column>
+<column name="tmp_reg_1343">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, snn_mnist_hls, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, snn_mnist_hls, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, snn_mnist_hls, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, snn_mnist_hls, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, snn_mnist_hls, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, snn_mnist_hls, return value</column>
+<column name="input_r_dout">in, 10, ap_fifo, input_r, pointer</column>
+<column name="input_r_empty_n">in, 1, ap_fifo, input_r, pointer</column>
+<column name="input_r_read">out, 1, ap_fifo, input_r, pointer</column>
+<column name="output_r_address0">out, 4, ap_memory, output_r, array</column>
+<column name="output_r_ce0">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_we0">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_d0">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_address1">out, 4, ap_memory, output_r, array</column>
+<column name="output_r_ce1">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_we1">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_d1">out, 1, ap_memory, output_r, array</column>
+</table>
+</item>
+</section>
+</profile>

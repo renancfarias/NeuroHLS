@@ -1,0 +1,50 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  2486, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 10438, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  5171, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  4482, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  3792, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 19716, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  3370, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  3370, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  3370, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  3509, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  3509, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  3371, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  3370, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  3370, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  3377, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  3668, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="snn_mnist_hls" col1="snn.cpp:9" col2="2486" col3="3792" col4="3509" col5="3370" col6="3668">
+                    <row id="2" col0="lif_layer&lt;128, 784, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;" col1="layer.h:37" col2="1189" col3="3469" col4="3082" col5="2954" col6="3215"/>
+                    <row id="5" col0="lif_layer&lt;10, 128, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, hls::stream&lt;ap_uint&lt;10&gt;, 0&gt;, 1&gt;" col1="layer.h:37" col2="1189" col3="283" col4="250" col5="240" col6="265"/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\snn_n-mnist_latency_opt\\snn_n-mnist_latency_opt.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/04/25 18:35:33",
+ "timestampMillis": "1759613733383",
+ "buildStep": {
+  "cmdId": "8c5c97d0-c880-46cb-b6a5-3d9a16eb9767",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\snn_n-mnist_latency_opt\\logs\\snn_n-mnist_latency_opt.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\hls_config.cfg --work_dir snn_n-mnist_latency_opt ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\hls_config.cfg",
+   "--work_dir",
+   "snn_n-mnist_latency_opt"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:35:33",
+ "timestampMillis": "1759613733384",
+ "status": {
+  "cmdId": "8c5c97d0-c880-46cb-b6a5-3d9a16eb9767",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/04/25 18:36:01",
+ "timestampMillis": "1759613761205",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\latency_optimized.h",
+     "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\parameters.h",
+     "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\snn.cpp",
+     "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\snn.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/04/25 18:36:01",
+ "timestampMillis": "1759613761210",
+ "buildStep": {
+  "cmdId": "6f5ac556-da16-400e-a728-d415df4773e6",
+  "name": "",
+  "logFile": "C:/Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt\\snn_n-mnist_latency_opt\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_latency_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:36:01",
+ "timestampMillis": "1759613761211",
+ "status": {
+  "cmdId": "6f5ac556-da16-400e-a728-d415df4773e6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:53:46",
+ "timestampMillis": "1759614826991",
+ "status": {
+  "cmdId": "6f5ac556-da16-400e-a728-d415df4773e6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/04/25 18:53:47",
+ "timestampMillis": "1759614827171",
+ "status": {
+  "cmdId": "8c5c97d0-c880-46cb-b6a5-3d9a16eb9767",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:53:47",
+ "timestampMillis": "1759614827171",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/04/25 18:53:47",
+ "timestampMillis": "1759614827172",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

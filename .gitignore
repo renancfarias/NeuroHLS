@@ -1,0 +1,43 @@
+#Ignore dataset folders and files
+/data
+/dataset/n-mnist_testset_data.txt
+/dataset/n-mnist_testset_targets.txt
+
+# Ignore build output directory
+/build
+build/
+**/build/
+/export
+export/
+**/export/
+
+# Ignore object files and dependent files
+.o
+*.o
+**/*.o
+.d
+*.d
+**/*.d
+
+#Ignore logs folder and log files
+/logs
+*.log
+**/*.log
+
+#Ignore lock files
+.lock
+*.lock
+**/*.lock
+
+.bin
+*.bin
+**/*.bin
+.pdi
+*.pdi
+**/*.pdi
+.vitisWorkspace.json
+*.vitisWorkspace.json
+**/*.vitisWorkspace.json
+
+_ide/logs
+_ide/.wsdata

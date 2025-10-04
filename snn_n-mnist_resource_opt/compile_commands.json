@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=snn_mnist_hls",
+      "-c",
+      "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn.cpp"
+    ],
+    "file": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn.cpp"
+  },
+  {
+    "directory": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_tb.cpp"
+    ],
+    "file": "C:\\Users\\renan\\Desktop\\NeuroHLS\\snn_n-mnist_resource_opt\\snn_tb.cpp"
+  }
+]

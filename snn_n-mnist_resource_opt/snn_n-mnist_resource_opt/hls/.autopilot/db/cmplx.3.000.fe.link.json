@@ -1,0 +1,86 @@
+{
+  "0": {
+    "basicblocks": 11,
+    "calls": "3 6",
+    "file": "snn.cpp",
+    "fileloc": 9,
+    "instructions": 57,
+    "loads": {
+      "G": 1,
+      "L": 2
+    },
+    "name": "snn_mnist_hls",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 2486
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "4 2 5",
+    "file": "snn.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 4,
+    "name": "",
+    "total_instructions": 45531530
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "n-mnist_weights.h",
+    "fileloc": 3,
+    "instructions": 100353,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 44957697
+  },
+  "3": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 37,
+    "instructions": 127,
+    "loads": {
+      "L": 4
+    },
+    "name": "lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>",
+    "stores": {
+      "G": 2,
+      "L": 2
+    },
+    "total_instructions": 1189
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 33,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 388
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "n-mnist_weights.h",
+    "fileloc": 132,
+    "instructions": 1281,
+    "name": "__cxx_global_var_init.4",
+    "total_instructions": 573441
+  },
+  "6": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "layer.h",
+    "fileloc": 37,
+    "instructions": 127,
+    "loads": {
+      "L": 4
+    },
+    "name": "lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>",
+    "stores": {
+      "G": 2,
+      "L": 2
+    },
+    "total_instructions": 1189
+  }
+}

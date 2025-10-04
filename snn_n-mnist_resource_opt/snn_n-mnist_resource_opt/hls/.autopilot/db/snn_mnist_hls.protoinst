@@ -1,0 +1,59 @@
+{
+	"version": "1.0",
+	"modules": {
+		"snn_mnist_hls": {
+			"proto_instances": {
+				"/AESL_inst_snn_mnist_hls_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_1279/grp_lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_1279_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_lif_layer_10_128_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_1279/grp_lif_layer_10_128_stream_stream_ap_uint_10_0_1_Pipeline_integrate_fu_259/grp_lif_layer_10_128_stream_stream_ap_uint_10_0_1_Pipeline_integrate_fu_259_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_760/grp_lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_760_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_lif_layer_128_784_stream_ap_uint_10_0_stream_ap_uint_10_0_1_s_fu_760/grp_lif_layer_128_784_stream_stream_ap_uint_10_0_1_Pipeline_integrate_fu_2619/grp_lif_layer_128_784_stream_stream_ap_uint_10_0_1_Pipeline_integrate_fu_2619_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

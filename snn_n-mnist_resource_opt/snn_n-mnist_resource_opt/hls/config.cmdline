@@ -1,0 +1,3 @@
+relativeroot=C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_resource_opt
+original_argv=-c --mode hls --config C:\Users\renan\Desktop\NeuroHLS\snn_n-mnist_resource_opt\hls_config.cfg --work_dir snn_n-mnist_resource_opt 
+

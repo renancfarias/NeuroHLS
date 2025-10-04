@@ -1,0 +1,668 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_resource_opt/snn_n-mnist_resource_opt/hls/.autopilot/db\snn.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_snn.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.2
+    DebugLoc:        { File: ./layer.h, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_snn.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_resource_opt/snn_n-mnist_resource_opt/hls/.autopilot/db\snn.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_resource_opt/snn_n-mnist_resource_opt/hls/.autopilot/db\snn.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_snn.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.3
+    DebugLoc:        { File: ./../weights/n-mnist_weights.h, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_snn.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_resource_opt/snn_n-mnist_resource_opt/hls/.autopilot/db\snn.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_resource_opt/snn_n-mnist_resource_opt/hls/.autopilot/db\snn.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_snn.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.4
+    DebugLoc:        { File: ./../weights/n-mnist_weights.h, Line: 132, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_snn.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/renan/Desktop/NeuroHLS/snn_n-mnist_resource_opt/snn_n-mnist_resource_opt/hls/.autopilot/db\snn.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: snn.cpp, Line: 19, Column: 2 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - Callee:          'void lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [784])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: snn.cpp, Line: 20, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - Callee:          'void lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [128])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: snn.cpp, Line: 28, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        write_output
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: snn.cpp, Line: 23, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        reset_ouput
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 73, Column: 26 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_73_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 61, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        output
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 49, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        fire_leak
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 73, Column: 26 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_73_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 61, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        output
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 49, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        fire_leak
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        reset_ouput
+  - String:          ''' ('
+  - LoopLoc:         'snn.cpp:23:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          snn_mnist_hls
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_73_1
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:73:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        output
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:61:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        output
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:61:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        fire_leak
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:49:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_73_1
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:73:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '128'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        output
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:61:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '128'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        output
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:61:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        fire_leak
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:49:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '128'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: snn.cpp, Line: 19, Column: 2 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - Callee:          'void lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [784])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: snn.cpp, Line: 20, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - Callee:          'void lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [128])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_snn_mnist_hls_ir
+Args:            
+  - Callee:          'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_snn_mnist_hls_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./../weights/n-mnist_weights.h, Line: 132, Column: 0 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weights_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./../weights/n-mnist_weights.h, Line: 3, Column: 0 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weights_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./layer.h, Line: 41, Column: 0 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EEE10potentials
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ./layer.h, Line: 41, Column: 0 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EEE10potentials
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        integrate
+  - String:          ' '
+  - LoopLoc:         './layer.h:69:5'
+  - String:          ' '
+  - Function:        'void lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [784])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        integrate
+  - String:          ' '
+  - LoopLoc:         './layer.h:69:5'
+  - String:          ' '
+  - Function:        'void lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [128])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: snn.cpp, Line: 28, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        write_output
+  - String:          ' '
+  - LoopLoc:         'snn.cpp:28:5'
+  - String:          ' '
+  - Function:        'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        integrate
+  - String:          '''('
+  - LoopLoc:         './layer.h:69:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        integrate
+  - String:          '''('
+  - LoopLoc:         './layer.h:69:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: snn.cpp, Line: 28, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        write_output
+  - String:          '''('
+  - LoopLoc:         'snn.cpp:28:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: snn.cpp, Line: 28, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        write_output
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: snn.cpp, Line: 28, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        write_output
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: snn.cpp, Line: 28, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        write_output
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        integrate
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: snn.cpp, Line: 28, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        write_output
+  - String:          ''' ('
+  - LoopLoc:         'snn.cpp:28:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          snn_mnist_hls
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi10ELi128EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        integrate
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:69:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: ./layer.h, Line: 69, Column: 5 }
+Function:        _Z9lif_layerILi128ELi784EN3hls6streamI7ap_uintILi10EELi0EEES4_Li1EEvRT1_RT2_PAT0__8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        integrate
+  - String:          ''' ('
+  - LoopLoc:         './layer.h:69:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>'
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: snn.cpp, Line: 19, Column: 2 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - Callee:          'void lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [784])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: snn.cpp, Line: 20, Column: 5 }
+Function:        _Z13snn_mnist_hlsRN3hls6streamI7ap_uintILi10EELi0EEEPS1_ILi1EE
+Args:            
+  - Callee:          'void lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>(hls::stream<ap_uint<10>, 0>&, hls::stream<ap_uint<10>, 0>&, ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)3, 0> (*) [128])'
+    DebugLoc:        { File: ./layer.h, Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'snn_mnist_hls(hls::stream<ap_uint<10>, 0>&, ap_uint<1>*)'
+    DebugLoc:        { File: snn.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

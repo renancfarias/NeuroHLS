@@ -1,0 +1,87 @@
+{
+    "1": {
+        "name": "lif_layer<10,128,stream,stream<ap_uint<10>,0>,1>_Pipeline_integrate",
+        "file": ".\/layer.h",
+        "fileloc": "69",
+        "instructions": "120",
+        "total_instructions": "120",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "10",
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "lif_layer<128,784,stream,stream<ap_uint<10>,0>,1>_Pipeline_integrate",
+        "file": ".\/layer.h",
+        "fileloc": "69",
+        "instructions": "1418",
+        "total_instructions": "1418",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "128",
+            "L": "128"
+        },
+        "stores": {
+            "L": "256"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "lif_layer<10, 128, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>",
+        "file": "layer.h",
+        "fileloc": "37",
+        "instructions": "217",
+        "total_instructions": "337",
+        "calls": "1",
+        "basicblocks": "23",
+        "loads": {
+            "G": "10",
+            "L": "10"
+        },
+        "stores": {
+            "G": "10"
+        }
+    },
+    "0": {
+        "name": "snn_mnist_hls",
+        "file": "snn.cpp",
+        "fileloc": "9",
+        "instructions": "47",
+        "total_instructions": "4497",
+        "calls": "4 3",
+        "basicblocks": "5",
+        "stores": {
+            "T": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "lif_layer<128, 784, hls::stream<ap_uint<10>, 0>, hls::stream<ap_uint<10>, 0>, 1>",
+        "file": "layer.h",
+        "fileloc": "37",
+        "instructions": "2695",
+        "total_instructions": "4113",
+        "calls": "2",
+        "basicblocks": "259",
+        "loads": {
+            "G": "128",
+            "L": "128"
+        },
+        "stores": {
+            "G": "128"
+        }
+    }
+}

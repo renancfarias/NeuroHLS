@@ -1,0 +1,12 @@
+{
+  "name": "snn_n-mnist_latency_opt",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "snn_n-mnist_latency_opt"
+  },
+  "template": "empty_hls_component"
+}

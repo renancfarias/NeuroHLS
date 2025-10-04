@@ -1,0 +1,270 @@
+
+
+================================================================
+== Vitis HLS Report for 'lif_layer_10_128_stream_stream_ap_uint_10_0_1_Pipeline_integrate'
+================================================================
+* Date:           Sat Oct  4 18:23:14 2025
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        snn_n-mnist_resource_opt
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintexu
+* Target device:  xcku035-fbva676-3-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.50 ns|  1.738 ns|     0.68 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max   | min | max |                      Type                      |
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+    |        5|      259|  12.500 ns|  0.647 us|    2|  256|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- integrate  |        3|      257|         4|          2|          1|  0 ~ 128|       yes|
+        +-------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.91>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%conv_i_i185 = alloca i32 1"   --->   Operation 7 'alloca' 'conv_i_i185' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%conv_i_i18_17 = alloca i32 1"   --->   Operation 8 'alloca' 'conv_i_i18_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%conv_i_i18_29 = alloca i32 1"   --->   Operation 9 'alloca' 'conv_i_i18_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%conv_i_i18_311 = alloca i32 1"   --->   Operation 10 'alloca' 'conv_i_i18_311' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%conv_i_i18_413 = alloca i32 1"   --->   Operation 11 'alloca' 'conv_i_i18_413' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%conv_i_i18_515 = alloca i32 1"   --->   Operation 12 'alloca' 'conv_i_i18_515' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%conv_i_i18_617 = alloca i32 1"   --->   Operation 13 'alloca' 'conv_i_i18_617' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%conv_i_i18_719 = alloca i32 1"   --->   Operation 14 'alloca' 'conv_i_i18_719' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%conv_i_i18_821 = alloca i32 1"   --->   Operation 15 'alloca' 'conv_i_i18_821' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%conv_i_i18_923 = alloca i32 1"   --->   Operation 16 'alloca' 'conv_i_i18_923' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_promoted_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted"   --->   Operation 17 'read' 'p_promoted_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_promoted6_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted6"   --->   Operation 18 'read' 'p_promoted6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_promoted8_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted8"   --->   Operation 19 'read' 'p_promoted8_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_promoted10_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted10"   --->   Operation 20 'read' 'p_promoted10_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_promoted12_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted12"   --->   Operation 21 'read' 'p_promoted12_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_promoted14_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted14"   --->   Operation 22 'read' 'p_promoted14_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_promoted16_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted16"   --->   Operation 23 'read' 'p_promoted16_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_promoted18_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted18"   --->   Operation 24 'read' 'p_promoted18_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%p_promoted20_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted20"   --->   Operation 25 'read' 'p_promoted20_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_promoted22_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_promoted22"   --->   Operation 26 'read' 'p_promoted22_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%p_promoted_cast = sext i9 %p_promoted_read"   --->   Operation 27 'sext' 'p_promoted_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%p_promoted6_cast = sext i9 %p_promoted6_read"   --->   Operation 28 'sext' 'p_promoted6_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_promoted8_cast = sext i9 %p_promoted8_read"   --->   Operation 29 'sext' 'p_promoted8_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%p_promoted10_cast = sext i9 %p_promoted10_read"   --->   Operation 30 'sext' 'p_promoted10_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%p_promoted12_cast = sext i9 %p_promoted12_read"   --->   Operation 31 'sext' 'p_promoted12_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%p_promoted14_cast = sext i9 %p_promoted14_read"   --->   Operation 32 'sext' 'p_promoted14_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%p_promoted16_cast = sext i9 %p_promoted16_read"   --->   Operation 33 'sext' 'p_promoted16_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%p_promoted18_cast = sext i9 %p_promoted18_read"   --->   Operation 34 'sext' 'p_promoted18_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%p_promoted20_cast = sext i9 %p_promoted20_read"   --->   Operation 35 'sext' 'p_promoted20_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%p_promoted22_cast = sext i9 %p_promoted22_read"   --->   Operation 36 'sext' 'p_promoted22_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i10 %out1, void @empty, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted22_cast, i16 %conv_i_i18_923"   --->   Operation 38 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 39 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted20_cast, i16 %conv_i_i18_821"   --->   Operation 39 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 40 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted18_cast, i16 %conv_i_i18_719"   --->   Operation 40 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 41 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted16_cast, i16 %conv_i_i18_617"   --->   Operation 41 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 42 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted14_cast, i16 %conv_i_i18_515"   --->   Operation 42 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 43 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted12_cast, i16 %conv_i_i18_413"   --->   Operation 43 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 44 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted10_cast, i16 %conv_i_i18_311"   --->   Operation 44 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 45 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted8_cast, i16 %conv_i_i18_29"   --->   Operation 45 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 46 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted6_cast, i16 %conv_i_i18_17"   --->   Operation 46 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 47 [1/1] (0.47ns)   --->   "%store_ln0 = store i16 %p_promoted_cast, i16 %conv_i_i185"   --->   Operation 47 'store' 'store_ln0' <Predicate = true> <Delay = 0.47>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln71 = br void %VITIS_LOOP_73_1" [./layer.h:71]   --->   Operation 48 'br' 'br_ln71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] ( I:0.91ns O:0.91ns )   --->   "%out1_read = read i10 @_ssdm_op_Read.ap_fifo.volatile.i10P0A, i10 %out1" [./layer.h:72]   --->   Operation 49 'read' 'out1_read' <Predicate = true> <Delay = 0.91> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.85> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 128> <FIFO>
+
+State 2 <SV = 1> <Delay = 1.42>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%idxprom39 = zext i10 %out1_read" [./layer.h:72]   --->   Operation 50 'zext' 'idxprom39' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%weights_1_0_addr = getelementptr i12 %weights_1_0, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 51 'getelementptr' 'weights_1_0_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [2/2] (1.42ns)   --->   "%weights_1_0_load = load i7 %weights_1_0_addr" [./layer.h:74]   --->   Operation 52 'load' 'weights_1_0_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%weights_1_1_addr = getelementptr i12 %weights_1_1, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 53 'getelementptr' 'weights_1_1_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [2/2] (1.42ns)   --->   "%weights_1_1_load = load i7 %weights_1_1_addr" [./layer.h:74]   --->   Operation 54 'load' 'weights_1_1_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%weights_1_2_addr = getelementptr i12 %weights_1_2, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 55 'getelementptr' 'weights_1_2_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [2/2] (1.42ns)   --->   "%weights_1_2_load = load i7 %weights_1_2_addr" [./layer.h:74]   --->   Operation 56 'load' 'weights_1_2_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%weights_1_3_addr = getelementptr i12 %weights_1_3, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 57 'getelementptr' 'weights_1_3_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 58 [2/2] (1.42ns)   --->   "%weights_1_3_load = load i7 %weights_1_3_addr" [./layer.h:74]   --->   Operation 58 'load' 'weights_1_3_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%weights_1_4_addr = getelementptr i12 %weights_1_4, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 59 'getelementptr' 'weights_1_4_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [2/2] (1.42ns)   --->   "%weights_1_4_load = load i7 %weights_1_4_addr" [./layer.h:74]   --->   Operation 60 'load' 'weights_1_4_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%weights_1_5_addr = getelementptr i12 %weights_1_5, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 61 'getelementptr' 'weights_1_5_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [2/2] (1.42ns)   --->   "%weights_1_5_load = load i7 %weights_1_5_addr" [./layer.h:74]   --->   Operation 62 'load' 'weights_1_5_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%weights_1_6_addr = getelementptr i12 %weights_1_6, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 63 'getelementptr' 'weights_1_6_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [2/2] (1.42ns)   --->   "%weights_1_6_load = load i7 %weights_1_6_addr" [./layer.h:74]   --->   Operation 64 'load' 'weights_1_6_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%weights_1_7_addr = getelementptr i12 %weights_1_7, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 65 'getelementptr' 'weights_1_7_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [2/2] (1.42ns)   --->   "%weights_1_7_load = load i7 %weights_1_7_addr" [./layer.h:74]   --->   Operation 66 'load' 'weights_1_7_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%weights_1_8_addr = getelementptr i12 %weights_1_8, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 67 'getelementptr' 'weights_1_8_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [2/2] (1.42ns)   --->   "%weights_1_8_load = load i7 %weights_1_8_addr" [./layer.h:74]   --->   Operation 68 'load' 'weights_1_8_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%weights_1_9_addr = getelementptr i12 %weights_1_9, i64 0, i64 %idxprom39" [./layer.h:74]   --->   Operation 69 'getelementptr' 'weights_1_9_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [2/2] (1.42ns)   --->   "%weights_1_9_load = load i7 %weights_1_9_addr" [./layer.h:74]   --->   Operation 70 'load' 'weights_1_9_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_2 : Operation 71 [1/1] ( I:0.00ns O:0.00ns )   --->   "%tmp_s = nbreadreq i1 @_ssdm_op_NbReadReq.ap_fifo.i10P0A, i10 %out1, i32 1" [./layer.h:69]   --->   Operation 71 'nbreadreq' 'tmp_s' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.85> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 128> <FIFO>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln69 = br i1 %tmp_s, void %mergeST17.loopexit.exitStub, void %VITIS_LOOP_73_1" [./layer.h:69]   --->   Operation 72 'br' 'br_ln69' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.42>
+ST_3 : Operation 73 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_0_load = load i7 %weights_1_0_addr" [./layer.h:74]   --->   Operation 73 'load' 'weights_1_0_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 74 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_1_load = load i7 %weights_1_1_addr" [./layer.h:74]   --->   Operation 74 'load' 'weights_1_1_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 75 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_2_load = load i7 %weights_1_2_addr" [./layer.h:74]   --->   Operation 75 'load' 'weights_1_2_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 76 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_3_load = load i7 %weights_1_3_addr" [./layer.h:74]   --->   Operation 76 'load' 'weights_1_3_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 77 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_4_load = load i7 %weights_1_4_addr" [./layer.h:74]   --->   Operation 77 'load' 'weights_1_4_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 78 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_5_load = load i7 %weights_1_5_addr" [./layer.h:74]   --->   Operation 78 'load' 'weights_1_5_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 79 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_6_load = load i7 %weights_1_6_addr" [./layer.h:74]   --->   Operation 79 'load' 'weights_1_6_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 80 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_7_load = load i7 %weights_1_7_addr" [./layer.h:74]   --->   Operation 80 'load' 'weights_1_7_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 81 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_8_load = load i7 %weights_1_8_addr" [./layer.h:74]   --->   Operation 81 'load' 'weights_1_8_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+ST_3 : Operation 82 [1/2] ( I:1.42ns O:1.42ns )   --->   "%weights_1_9_load = load i7 %weights_1_9_addr" [./layer.h:74]   --->   Operation 82 'load' 'weights_1_9_load' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 100 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 12> <Depth = 128> <ROM>
+
+State 4 <SV = 3> <Delay = 1.73>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "%conv_i_i185_load = load i16 %conv_i_i185" [./layer.h:74]   --->   Operation 83 'load' 'conv_i_i185_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "%conv_i_i18_17_load = load i16 %conv_i_i18_17" [./layer.h:74]   --->   Operation 84 'load' 'conv_i_i18_17_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "%conv_i_i18_29_load = load i16 %conv_i_i18_29" [./layer.h:74]   --->   Operation 85 'load' 'conv_i_i18_29_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [1/1] (0.00ns)   --->   "%conv_i_i18_311_load = load i16 %conv_i_i18_311" [./layer.h:74]   --->   Operation 86 'load' 'conv_i_i18_311_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 87 [1/1] (0.00ns)   --->   "%conv_i_i18_413_load = load i16 %conv_i_i18_413" [./layer.h:74]   --->   Operation 87 'load' 'conv_i_i18_413_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 88 [1/1] (0.00ns)   --->   "%conv_i_i18_515_load = load i16 %conv_i_i18_515" [./layer.h:74]   --->   Operation 88 'load' 'conv_i_i18_515_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "%conv_i_i18_617_load = load i16 %conv_i_i18_617" [./layer.h:74]   --->   Operation 89 'load' 'conv_i_i18_617_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 90 [1/1] (0.00ns)   --->   "%conv_i_i18_719_load = load i16 %conv_i_i18_719" [./layer.h:74]   --->   Operation 90 'load' 'conv_i_i18_719_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 91 [1/1] (0.00ns)   --->   "%conv_i_i18_821_load = load i16 %conv_i_i18_821" [./layer.h:74]   --->   Operation 91 'load' 'conv_i_i18_821_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 92 [1/1] (0.00ns)   --->   "%conv_i_i18_923_load = load i16 %conv_i_i18_923" [./layer.h:74]   --->   Operation 92 'load' 'conv_i_i18_923_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 93 [1/1] (0.00ns)   --->   "%specpipeline_ln71 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [./layer.h:71]   --->   Operation 93 'specpipeline' 'specpipeline_ln71' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 94 [1/1] (0.00ns)   --->   "%speclooptripcount_ln70 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 128, i64 15" [./layer.h:70]   --->   Operation 94 'speclooptripcount' 'speclooptripcount_ln70' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 95 [1/1] (0.00ns)   --->   "%specloopname_ln69 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [./layer.h:69]   --->   Operation 95 'specloopname' 'specloopname_ln69' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 96 [1/1] (0.00ns)   --->   "%sext_ln74 = sext i12 %weights_1_0_load" [./layer.h:74]   --->   Operation 96 'sext' 'sext_ln74' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 97 [1/1] (1.26ns)   --->   "%add_ln74 = add i16 %sext_ln74, i16 %conv_i_i185_load" [./layer.h:74]   --->   Operation 97 'add' 'add_ln74' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%sext_ln74_128 = sext i12 %weights_1_1_load" [./layer.h:74]   --->   Operation 98 'sext' 'sext_ln74_128' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (1.26ns)   --->   "%add_ln74_128 = add i16 %sext_ln74_128, i16 %conv_i_i18_17_load" [./layer.h:74]   --->   Operation 99 'add' 'add_ln74_128' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 100 [1/1] (0.00ns)   --->   "%sext_ln74_129 = sext i12 %weights_1_2_load" [./layer.h:74]   --->   Operation 100 'sext' 'sext_ln74_129' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 101 [1/1] (1.26ns)   --->   "%add_ln74_129 = add i16 %sext_ln74_129, i16 %conv_i_i18_29_load" [./layer.h:74]   --->   Operation 101 'add' 'add_ln74_129' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 102 [1/1] (0.00ns)   --->   "%sext_ln74_130 = sext i12 %weights_1_3_load" [./layer.h:74]   --->   Operation 102 'sext' 'sext_ln74_130' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 103 [1/1] (1.26ns)   --->   "%add_ln74_130 = add i16 %sext_ln74_130, i16 %conv_i_i18_311_load" [./layer.h:74]   --->   Operation 103 'add' 'add_ln74_130' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "%sext_ln74_131 = sext i12 %weights_1_4_load" [./layer.h:74]   --->   Operation 104 'sext' 'sext_ln74_131' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 105 [1/1] (1.26ns)   --->   "%add_ln74_131 = add i16 %sext_ln74_131, i16 %conv_i_i18_413_load" [./layer.h:74]   --->   Operation 105 'add' 'add_ln74_131' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 106 [1/1] (0.00ns)   --->   "%sext_ln74_132 = sext i12 %weights_1_5_load" [./layer.h:74]   --->   Operation 106 'sext' 'sext_ln74_132' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 107 [1/1] (1.26ns)   --->   "%add_ln74_132 = add i16 %sext_ln74_132, i16 %conv_i_i18_515_load" [./layer.h:74]   --->   Operation 107 'add' 'add_ln74_132' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 108 [1/1] (0.00ns)   --->   "%sext_ln74_133 = sext i12 %weights_1_6_load" [./layer.h:74]   --->   Operation 108 'sext' 'sext_ln74_133' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 109 [1/1] (1.26ns)   --->   "%add_ln74_133 = add i16 %sext_ln74_133, i16 %conv_i_i18_617_load" [./layer.h:74]   --->   Operation 109 'add' 'add_ln74_133' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 110 [1/1] (0.00ns)   --->   "%sext_ln74_134 = sext i12 %weights_1_7_load" [./layer.h:74]   --->   Operation 110 'sext' 'sext_ln74_134' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 111 [1/1] (1.26ns)   --->   "%add_ln74_134 = add i16 %sext_ln74_134, i16 %conv_i_i18_719_load" [./layer.h:74]   --->   Operation 111 'add' 'add_ln74_134' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 112 [1/1] (0.00ns)   --->   "%sext_ln74_135 = sext i12 %weights_1_8_load" [./layer.h:74]   --->   Operation 112 'sext' 'sext_ln74_135' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 113 [1/1] (1.26ns)   --->   "%add_ln74_135 = add i16 %sext_ln74_135, i16 %conv_i_i18_821_load" [./layer.h:74]   --->   Operation 113 'add' 'add_ln74_135' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 114 [1/1] (0.00ns)   --->   "%sext_ln74_136 = sext i12 %weights_1_9_load" [./layer.h:74]   --->   Operation 114 'sext' 'sext_ln74_136' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 115 [1/1] (1.26ns)   --->   "%add_ln74_136 = add i16 %sext_ln74_136, i16 %conv_i_i18_923_load" [./layer.h:74]   --->   Operation 115 'add' 'add_ln74_136' <Predicate = true> <Delay = 1.26> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 116 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_136, i16 %conv_i_i18_923" [./layer.h:74]   --->   Operation 116 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 117 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_135, i16 %conv_i_i18_821" [./layer.h:74]   --->   Operation 117 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 118 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_134, i16 %conv_i_i18_719" [./layer.h:74]   --->   Operation 118 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 119 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_133, i16 %conv_i_i18_617" [./layer.h:74]   --->   Operation 119 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 120 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_132, i16 %conv_i_i18_515" [./layer.h:74]   --->   Operation 120 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 121 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_131, i16 %conv_i_i18_413" [./layer.h:74]   --->   Operation 121 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 122 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_130, i16 %conv_i_i18_311" [./layer.h:74]   --->   Operation 122 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 123 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_129, i16 %conv_i_i18_29" [./layer.h:74]   --->   Operation 123 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 124 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74_128, i16 %conv_i_i18_17" [./layer.h:74]   --->   Operation 124 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 125 [1/1] (0.47ns)   --->   "%store_ln74 = store i16 %add_ln74, i16 %conv_i_i185" [./layer.h:74]   --->   Operation 125 'store' 'store_ln74' <Predicate = true> <Delay = 0.47>
+ST_4 : Operation 126 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_out, i16 %add_ln74" [./layer.h:74]   --->   Operation 126 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_128_out, i16 %add_ln74_128" [./layer.h:74]   --->   Operation 127 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_129_out, i16 %add_ln74_129" [./layer.h:74]   --->   Operation 128 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 129 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_130_out, i16 %add_ln74_130" [./layer.h:74]   --->   Operation 129 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_131_out, i16 %add_ln74_131" [./layer.h:74]   --->   Operation 130 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_132_out, i16 %add_ln74_132" [./layer.h:74]   --->   Operation 131 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_133_out, i16 %add_ln74_133" [./layer.h:74]   --->   Operation 132 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_134_out, i16 %add_ln74_134" [./layer.h:74]   --->   Operation 133 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_135_out, i16 %add_ln74_135" [./layer.h:74]   --->   Operation 134 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %add_ln74_136_out, i16 %add_ln74_136" [./layer.h:74]   --->   Operation 135 'write' 'write_ln74' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_4 : Operation 136 [1/1] (0.47ns)   --->   "%ret_ln0 = ret"   --->   Operation 136 'ret' 'ret_ln0' <Predicate = (!tmp_s)> <Delay = 0.47>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2.500ns, clock uncertainty: 0.675ns.
+
+ <State 1>: 0.913ns
+The critical path consists of the following:
+	fifo read operation ('out1_read', ./layer.h:72) on port 'out1' (./layer.h:72) [88]  (0.913 ns)
+
+ <State 2>: 1.428ns
+The critical path consists of the following:
+	'getelementptr' operation 7 bit ('weights_1_0_addr', ./layer.h:74) [90]  (0.000 ns)
+	'load' operation 12 bit ('weights_1_0_load', ./layer.h:74) on array 'weights_1_0' [91]  (1.428 ns)
+
+ <State 3>: 1.428ns
+The critical path consists of the following:
+	'load' operation 12 bit ('weights_1_0_load', ./layer.h:74) on array 'weights_1_0' [91]  (1.428 ns)
+
+ <State 4>: 1.738ns
+The critical path consists of the following:
+	'load' operation 16 bit ('conv_i_i18_923_load', ./layer.h:74) on local variable 'conv_i_i18_923' [84]  (0.000 ns)
+	'add' operation 16 bit ('add_ln74_136', ./layer.h:74) [129]  (1.260 ns)
+	'store' operation 0 bit ('store_ln74', ./layer.h:74) of variable 'add_ln74_136', ./layer.h:74 on local variable 'conv_i_i18_923' [131]  (0.478 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
